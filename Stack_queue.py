@@ -4,6 +4,7 @@ class DataStructures:
         self.queue = []  # Initialize an empty queue
 
     # Stack Operations
+
     def push_stack(self, value):
         """Adds an element to the top of the stack."""
         self.stack.append(value)
@@ -48,6 +49,7 @@ class DataStructures:
         print(f"Stack (Top -> Bottom): {self.stack[::-1]}")
         print(f"Queue (Front -> Rear): {self.queue}")
 
+
 # Demonstration of Stack and Queue operations
 ds = DataStructures()
 
@@ -58,6 +60,7 @@ ds.push_stack(30)
 print("Top of Stack:", ds.peek_stack())
 print("Popped from Stack:", ds.pop_stack())
 ds.display_structures()
+
 
 # Queue Operations
 ds.enqueue_queue(1)
