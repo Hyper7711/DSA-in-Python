@@ -11,7 +11,6 @@ class Node:
 class BinaryTree:
 
     def __init__(self, root_data):
-        """Initialize a tree with the root node."""
         self.root = Node(root_data)
 
 
