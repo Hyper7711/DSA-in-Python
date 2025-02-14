@@ -1,44 +1,40 @@
-"BINARY TREE REPRESENTATION"
+"""BINARY TREE REPRESENTATION"""
 
+class Node:
+    """Represents a single node in a binary tree."""
 
-class node:
-    def __init___(self, data):
-        self.data = data  # INITIALIZE NODE WITH DATA
-        self.left = None  # SET LEFT AND RIGHT CHILDREN TO NONE
-        self.right = None
+    def __init__(self, data):
+        self.data = data    #initialize NODE
+        self.left = None    #SET LEFT NODE
+        self.right = None   #SET RIGHT NODE
 
-
-class BinartTree:
+class BinaryTree:
 
     def __init__(self, root_data):
+        """Initialize a tree with the root node."""
         self.root = Node(root_data)
 
-    def inorder_tranversal(self, node):
 
+    def inorder_traversal(self, node):
         if node:
-            self.inorder_tranversal(node.left)
+            self.inorder_traversal(node.left)
             print(node.data, end=" ")
-            self.inorder_tranversal(node.right)
-
-        ############
+            self.inorder_traversal(node.right)
 
     def preorder_traversal(self, node):
-
         if node:
             print(node.data, end=" ")
             self.preorder_traversal(node.left)
             self.preorder_traversal(node.right)
 
-    def postorder_traversal(self, node):
-
+    def postorder_traversal(self, node)
         if node:
             self.postorder_traversal(node.left)
             self.postorder_traversal(node.right)
             print(node.data, end=" ")
 
-
 if __name__ == "__main__":
-
+    # Creating a sample binary tree
     tree = BinaryTree(1)
     tree.root.left = Node(2)
     tree.root.right = Node(3)
@@ -55,3 +51,4 @@ if __name__ == "__main__":
 
     print("\nPostorder Traversal:")
     tree.postorder_traversal(tree.root)
+
