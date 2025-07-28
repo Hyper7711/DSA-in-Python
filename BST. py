@@ -23,3 +23,4 @@ r = Node(50)
 for k in [30, 20, 40, 70, 60, 80]:
     insert(r, k)
 inorder(r)
+
