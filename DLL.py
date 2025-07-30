@@ -34,3 +34,4 @@ dll.push(20)  # Add node with data 20
 dll.push(30)  # Add node with data 30
 
 dll.print_list()  # Print the list (Output: 30 20 10)
+
