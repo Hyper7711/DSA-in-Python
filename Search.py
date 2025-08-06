@@ -85,3 +85,4 @@ search_algos.binary_search(array, 7)
 search_algos.jump_search(array, 7)
 search_algos.interpolation_search(array, 7)
 
+
