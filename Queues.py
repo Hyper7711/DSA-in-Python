@@ -1,4 +1,4 @@
-"""Queue implementation using Python lists."""
+""Queue implementation using Python lists.""
 
 
 class QueueList:
